@@ -17,7 +17,7 @@ public class HelloTest {
 
 	WebDriver driver;
 	WebElement text;
-	@BeforeTest
+	//@BeforeTest
 	public void beforeTest() {
 		/*	System.setProperty("webdriver.gecko.driver", "resources\\geckodriver32.exe");
 		driver = new FirefoxDriver();*/
@@ -27,7 +27,7 @@ public class HelloTest {
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 	}
 
-	@Test
+	//@Test
 	public void f() {
 
 		text = driver.findElement(By.xpath("html/body/h2"));
@@ -36,7 +36,7 @@ public class HelloTest {
 
 	}
 
-	@AfterTest
+	//@AfterTest
 	public void afterTest() {
 		//driver.close();
 	}
